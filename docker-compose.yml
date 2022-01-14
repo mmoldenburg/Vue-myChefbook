@@ -6,9 +6,9 @@ services:
       context: ./my-app
       dockerfile: Dockerfile
     ports:
-      - 8080:8080
+      - 8080:80
     volumes:
-      - ./:/app
+      - ./:/*
 
   server:
     image: fullstack-server-image
