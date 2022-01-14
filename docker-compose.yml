@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  my-app:
+    image: fullstack-app-image
+    build: 
+      context: ./my-app
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    volumes:
+      - ./:/app
+
+  server:
+    image: fullstack-server-image
+    build: 
+      context: ./server
+      dockerfile: Dockerfile

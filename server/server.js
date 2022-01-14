@@ -1,15 +1,15 @@
 const express = require('express');
 const path = require('path');
-const serveStatic = require('serve-static');
-const history = require('connect-history-api-fallback');
+// const serveStatic = require('serve-static');
+// const history = require('connect-history-api-fallback');
 const cors = require('cors');
 const scrapper = require('./scrappingChefkoch')
 
 const app = express();
 app.use(cors());
 app.use(express.json())
-app.use(express.static(path.join(__dirname, '../dist')));
-app.use(history())
+// app.use(express.static(path.join(__dirname, '../dist')));
+// app.use(history())
 
 const port = process.env.PORT || 5000;
         
