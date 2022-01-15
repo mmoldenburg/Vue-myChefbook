@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   my-app:
-    image: fullstack-app-image
+    image: mmoldenburg/fullstack-app-image
     build: 
       context: ./my-app
       dockerfile: Dockerfile
@@ -11,7 +11,7 @@ services:
       - ./:/*
 
   server:
-    image: fullstack-server-image
+    image: mmoldenburg/fullstack-server-image
     build: 
       context: ./server
       dockerfile: Dockerfile
