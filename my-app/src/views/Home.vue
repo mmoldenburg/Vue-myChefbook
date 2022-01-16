@@ -31,7 +31,7 @@
         <h1 class="pt-6 text-xl italic font-bold text-center lg:pt-12 lg:text-4xl text-vue-green">Eingesetzte Frameworks / Bibliotheken</h1>
         <h1 class="pt-8 pl-8 text-lg font-bold text-gray-200 lg:pl-24 lg:text-2xl">Website und Database</h1>
         <ul class="px-16 py-4 leading-8 text-left text-gray-200 list-disc lg:text-xl lg:px-32">
-          <li>Vue.js v3</li>
+          <li>Vue CLI 3</li>
           <li class="mt-3">Tailwind CSS</li>
           <li class="mt-3">Firebase Database</li>
           <li class="mt-3">Firebase Authentification</li>
