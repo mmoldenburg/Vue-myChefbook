@@ -35,7 +35,7 @@
           <li class="mt-3">Tailwind CSS</li>
           <li class="mt-3">Firebase Database</li>
           <li class="mt-3">Firebase Authentification</li>
-          <li class="mt-3">Firebase Hosting</li>
+          <li class="mt-3">Docker</li>
         </ul>
         <h1 class="pt-8 pl-8 text-lg font-bold text-gray-200 lg:pl-24 lg:text-2xl">REST-API</h1>
         <ul class="px-16 py-4 leading-8 text-left text-gray-200 list-disc lg:text-xl lg:px-32">
