@@ -53,7 +53,7 @@ export default {
                     throw new Error('keine gültige Rezept-Url')
                 }else{
                     
-                    const result = await fetch('url', {
+                    const result = await fetch('api/url', {
                         method: 'POST',
                         headers: { 'Content-Type':'application/json' },
                         body: JSON.stringify({ url: url.value })

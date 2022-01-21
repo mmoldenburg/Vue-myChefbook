@@ -8,9 +8,10 @@ app.use(cors());
 app.use(express.json())
 
 const port = process.env.PORT || 5000;
+app.use(express.static(path.join(__dirname, '../my-app/dist')));
         
 try {
-    app.post('/url', async (req, res) => {
+    app.post('/api/url', async (req, res) => {
         const result = await scrapper.scrappingChefkoch(req.body.url)
 
         res.send(result)     
@@ -18,6 +19,10 @@ try {
 } catch (error) {
     console.log(error.message)
 }    
+
+app.get('/', (req,res) => {
+    res.sendFile(path.join(__dirname, '../my-app/build/index.html'));
+  });
    
 app.listen(port, () => {
     console.log("Server has started on port 5000");
